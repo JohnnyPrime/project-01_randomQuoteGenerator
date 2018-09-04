@@ -7,7 +7,8 @@ var quotes = [
     source: "Shigeru Miyamoto",
     citation: "",
     year: null,
-    color: "DarkOliveGreen"
+    color: "DarkOliveGreen",
+    realLife: true
 
   },
   {
@@ -15,56 +16,64 @@ var quotes = [
     source: "Toad",
     citation: "Super Mario Bros.",
     year: 1985,
-    color: "Olive"
+    color: "Olive",
+    realLife: false
   },
   {
     quote: "My body is ready",
     source: "Reggie Fils",
     citation: "E3",
     year: 2007,
-    color: "OliveDrab"
+    color: "OliveDrab",
+    realLife: true
   },
   {
     quote: "It's-a me, Mario!",
     source: "Mario",
     citation: "Super Mario 64",
     year: 1996,
-    color: "LimeGreen"
+    color: "LimeGreen",
+    realLife: false
   },
   {
     quote: "I like shorts! They're comfy and easy to wear!",
     source: "Youngster",
     citation: "Pokémon Red and Blue",
     year: 1996,
-    color: "SpringGreen"
+    color: "SpringGreen",
+    realLife: false
   },
   {
     quote: "Hey, listen!",
     source: "Navi",
     citation: "The Legend of Zelda: Ocarina of Time",
     year: 1998,
-    color: "DarkSeaGreen"
+    color: "DarkSeaGreen",
+    realLife: false
   },
   {
     quote: "It's dangerous to go alone! Take this.",
     source: "Old Man",
     citation: "The Legend of Zelda",
     year: 1986,
-    color: "MediumAquamarine"
+    color: "MediumAquamarine",
+    realLife: false
   },
   {
     quote: "Get the power! NINTENDO POWER!",
     source: "Nintendo Power",
     citation: "",
     year: null,
-    color: "MediumSeaGreen"
+    color: "MediumSeaGreen",
+    realLife: true
   },
   {
     quote: "STOP RESETTIN'! You hear me?!",
     source: "Resetti",
     citation: "Animal Crossing",
     year: null,
-    color: "DarkGreen"
+    color: "DarkGreen",
+    realLife: false
   }
 
 ];
@@ -129,6 +138,11 @@ function printQuote() {
   }
   if (randomQuote.year) {
     message += '<span class = "year">' + randomQuote.year + ' </span>';
+  }
+  if (randomQuote.realLife) {
+    message += '<p><span class = "really">Not a simulation!</span></p>'
+  } else {
+    message += '<p ><span class = "really">Happened in a game.</span></p>'
   }
   message += '</p>'
   //console.log(message);

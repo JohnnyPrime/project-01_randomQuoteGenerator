@@ -23,7 +23,8 @@ body {
   margin: 0;
 }
 
-.quote:before, .quote:after {
+.quote:before,
+.quote:after {
   font-size: 6rem;
   line-height: 2.5rem;
   position: absolute;
@@ -43,7 +44,8 @@ body {
 }
 
 .source {
-  font-size: 1.25rem;;
+  font-size: 1.25rem;
+  ;
   letter-spacing: 0.05em;
   line-height: 1.1;
   text-align: right;
@@ -55,6 +57,11 @@ body {
 }
 
 .citation {
+  font-style: italic;
+}
+
+.really {
+  font-size: 16px;
   font-style: italic;
 }
 
@@ -80,10 +87,11 @@ body {
   color: #fff;
   background-color: #36b55c;
   padding: 15px 0;
-  transition: .5s ;
+  transition: .5s;
 }
+
 #loadQuote:hover {
-  background-color: rgba(255,255,255,.25);
+  background-color: rgba(255, 255, 255, .25);
 }
 
 #loadQuote:focus {
@@ -94,9 +102,12 @@ body {
   .quote {
     font-size: 2.5rem;
   }
-  .quote:before, .quote:after {
+
+  .quote:before,
+  .quote:after {
     font-size: 3rem;
   }
+
   .source {
     font-size: 1rem;
   }
